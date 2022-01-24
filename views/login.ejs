@@ -1,0 +1,27 @@
+<%- include("private/header") %> 
+
+<div class="loginform">
+    <div class="container">
+        <div class="text-center loghead">
+            <h2>Log in</h2>
+        </div>
+  </div>
+  <form action="/login" method="post">
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="visually-hidden">Email address</label>
+        <i class="fas fa-user ilogin"></i>
+        <input type="text" class="form-control" id="exampleFormControlInput1" name="username" required autocomplete="off" placeholder="john" style="width: 50%; margin: auto;">
+      </div>
+      <div class="col-auto">
+        <label for="inputPassword2" class="visually-hidden">Password</label>
+        <i class="fas fa-key ilogin"></i>
+        <input type="password" class="form-control" id="inputPassword2" name="password" required autocomplete="off" placeholder="Password" style="width: 50%; margin: auto;">
+      </div>
+      
+      <!-- <a href="/intro" class="btn btn-group btn-primary Logbutton" role="button">Submit</a> -->
+      <button type="submit" class="btn btn-group btn-primary Logbutton"> Submit <i class="fas fa-arrow-right" style="position: relative; top: 7px; left: 7px;"></i></button>
+     
+  </form>
+</div>
+
+<%- include("private/footer") %> 

@@ -1,0 +1,95 @@
+<%- include("private/header") %> 
+
+<h1>Register</h1>
+<form action="/register" method="POST">
+    <div class="form-floating mb-3 registerInfo">
+        <i class="fas fa-user iregister"></i>
+        <input type="text" class="form-control" style="background: none; color: white; position: relative;
+        top: -22px;" id="floatingInput" name="Name" required autocomplete="off" placeholder="sszzs">
+        <label for="floatingInput" style="color: black; font-size: 1.2rem;">Name</label>
+    </div>
+
+    <div class="form-floating mb-3 registerInfo">
+        <i class="fas fa-user iregister"></i>
+        <input type="tel" class="form-control" style="background: none; color: white; position: relative;
+        top: -22px;" id="floatingInput" name="age" required autocomplete="off" pattern="[0-9]{2}" placeholder="hello">
+        <label for="floatingInput" style="color: black; font-size: 1.2rem;">Age</label>
+    </div>
+
+    <div class="form-floating mb-3 registerInfo">
+        <i class="fas fa-user iregister"></i>
+        <input type="text" class="form-control" style="background: none; color: white; position: relative;
+        top: -22px;" id="floatingInput" name="nation" required autocomplete="off" placeholder="India">
+        <label for="floatingInput" style="color: black; font-size: 1.2rem;">Nationality</label>
+    </div>
+
+    <div class="form-floating mb-3 registerInfo">
+        <i class="fas fa-mobile iregister"></i>
+        <input type="tel" class="form-control" style="background: none; color: white; position: relative;
+        top: -22px;" id="floatingInput" name="Phn" required autocomplete="off" maxlength="10" pattern="[0-9]{10}" placeholder="svzsvz">
+        <label for="floatingInput"  style="color: black; font-size: 1.2rem;">Mobile</label>
+    </div>
+
+    <div class="form-floating mb-3 registerInfo">
+        <i class="fas fa-portrait iregister"></i>
+        <input type="email" class="form-control" style="background: none; color: white; position: relative;
+        top: -22px;" id="floatingInput" autocomplete="off" name="email" required placeholder="sczdvz">
+        <label for="floatingInput"  style="color: black; font-size: 1.2rem;">email</label>
+    </div>
+
+    <div class="form-floating mb-3 registerInfo">
+        <i class="fas fa-user iregister"></i>
+        <input type="text" class="form-control" style="background: none; color: white; position: relative;
+        top: -22px;" id="floatingInput" name="state" required autocomplete="off" placeholder="dvdv">
+        <label for="floatingInput" style="color: black; font-size: 1.2rem;">State</label>
+    </div>
+    
+    <div class="form-floating mb-3 registerInfo">
+        <i class="fas fa-user iregister"></i>
+        <input type="text" class="form-control" style="background: none; color: white; position: relative;
+        top: -22px;" id="floatingInput" name="town" required autocomplete="off" placeholder="szfs">
+        <label for="floatingInput" style="color: black; font-size: 1.2rem;">Town</label>
+    </div>
+
+    <div class="form-floating mb-3 registerInfo">
+        <i class="fas fa-at iregister"></i>
+        <input type="text" class="form-control" style="background: none; color: white; position: relative;
+        top: -22px;" id="floatingInput" name="village" required autocomplete="off" placeholder="fssdf">
+        <label for="floatingInput"  style="color: black; font-size: 1.2rem;">Village</label>
+    </div>
+
+    <div class="form-floating mb-3 registerInfo">
+        <i class="fas fa-at iregister"></i>
+        <input type="tel" class="form-control" style="background: none; color: white; position: relative;
+        top: -22px;" id="floatingInput" name="pin" required autocomplete="off" pattern="[0-9]{6}" placeholder="asfaf">
+        <label for="floatingInput"  style="color: black; font-size: 1.2rem;">PIN</label>
+    </div>
+
+    <div class="form-floating mb-3 registerInfo">
+        <i class="fas fa-portrait iregister"></i>
+        <input type="text" class="form-control" style="background: none; color: white; position: relative;
+        top: -22px;" id="floatingInput" autocomplete="off" name="username" required placeholder="asfs">
+        <label for="floatingInput"  style="color: black; font-size: 1.2rem;">Username</label>
+    </div>
+
+    <!-- <div class="form-floating mb-3 registerInfo">
+        <i class="fas fa-male iregister"></i>
+        <input type="text" class="form-control" style="background: none; color: white; position: relative;
+        top: -22px;" id="floatingInput" name="gender" required autocomplete="off" pattern="[M,F,O]{1}">
+        <label for="floatingInput"  style="color: black; font-size: 1.2rem;">Gender(M/F/O)</label>
+    </div> -->
+
+      <div class="form-floating mb-3 registerInfo">
+        <i class="fas fa-unlock-alt iregister"></i>
+        <input type="password" class="form-control" style="background: none; color: white; position: relative;
+        top: -22px;" id="floatingPassword" name="password" required autocomplete="off" placeholder="afaavas">
+        <label for="floatingPassword"  style="color: black; font-size: 1.2rem;">Password</label>
+      </div>
+
+      <!-- <a href="/intro" class="btn btn-group btn-primary registerbutton" role="button" type="submit">Submit</a> -->
+      <button type="submit" class="btn btn-lg-group btn-primary registerbutton">Register</button>
+</form>
+
+<hr>
+
+<%- include("private/footer") %> 

@@ -1,0 +1,109 @@
+<%- include("private/header") %> 
+
+<div class="box">
+
+    <i class="fas fa-user-circle fa-10x" style="position: relative;left: 18%;bottom: -90px;font-size: 200px;" ></i>
+
+    <i class="fas fa-chevron-circle-right" style="position: relative;
+    top: -55px;
+    color: black;
+    right: 64%;"> </i>
+    <p style="
+    font-size: 2rem;
+    position: relative;
+    top: -110px;
+    color: rgb(224 189 228);
+    left: -32%;
+    font-family: 'Yatra One', cursive;"><span>Name : </span><%= User.Name %>
+    </p>
+
+    <!-- <p> </p> -->
+    <i class="fas fa-calendar-week" style="position: relative;
+    top: -121px;
+    color: black;
+    right: 50%;"></i>
+    <p style="
+    font-size: 1.2rem;
+    position: relative;
+    top: -150px;
+    color: rgb(224 189 228);
+    left: -40%;
+    font-family: 'Yatra One', cursive;"> <span>Age : </span><%= User.Age %>  
+    </p>
+
+    <i class="fas fa-envelope" style="position: relative;
+    top: -161px;
+    color: black;
+    right: 50%;"></i>
+     <p style="
+    font-size: 1.2rem;
+    position: relative;
+    top: -190px;
+    color: rgb(224 189 228);
+    left: -30%;
+    font-family: 'Yatra One', cursive;"><span>Email : </span> <%= User.email %>  
+    </p>
+
+    <i class="fas fa-user-tag" style="position: relative;
+    top: -201px;
+    color: black;
+    right: 50%;"></i>
+     <p style="
+    font-size: 1.2rem;
+    position: relative;
+    top: -230px;
+    color: rgb(224 189 228);
+    left: -33%;
+    font-family: 'Yatra One', cursive;"><span>Username : </span>  <%= User.username %>
+    </p>
+
+    <i class=" fas fa-phone-volume" style="position: relative;
+    top: -241px;
+    color: black;
+    right: 50%;"></i>
+     <p style="
+    font-size: 1.2rem;
+    position: relative;
+    top: -270px;
+    color: rgb(224 189 228);
+    right: 33%;
+    font-family: 'Yatra One', cursive;"><span>Mobile : </span> <%= User.Phn %> 
+    </p>
+
+    <i class="fas fa-map-marker" style="position: relative;
+    top: -281px;
+    color: black;
+    right: 50%;"></i>
+     <p style="
+    font-size: 1.2rem;
+    position: relative;
+    top: -310px;
+    color: rgb(224 189 228);
+    right: 16%; 
+    font-family: 'Yatra One', cursive;"><span>Address : </span> <%= User.village %> , <%= User.town %>, <%= User.state %> , <%= User.pin %>
+    </p>
+
+    <i class="fas fa-globe-asia" style="position: relative;
+    top: -321px;
+    color: black;
+    right: 50%;"></i>
+    <p style="
+    font-size: 1.2rem;
+    position: relative;
+    top: -350px;
+    color: rgb(224 189 228);
+    left: -37%;
+    font-family: 'Yatra One', cursive;"> <span>Nation : </span><%= User.nation %> 
+    </p>
+
+    
+   <nav class="nav nav-masthead justify-content-center float-md-end" style="position: relative;
+   bottom: 774px;
+   left: 64%;">
+    <a class="nav-link active" href="/logout"><i class="fas fa-sign-out-alt"></i>Logout</a>
+    </nav>
+
+    </div>
+   <!-- <a href="/votepage" class="btn btn-light btn-sm" type="button">Vote</a> -->
+
+<%- include("private/footer") %> 
